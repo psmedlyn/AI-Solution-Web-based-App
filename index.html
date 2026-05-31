@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body::before,
+      body::after {
+        content: "";
+        position: absolute;
+        border-radius: 9999px;
+        filter: blur(100px);
+        opacity: 0.3;
+        z-index: 0;
+      }
+      body::before {
+        width: 300px;
+        height: 300px;
+        top: 20%;
+        left: 5%;
+        background: radial-gradient(circle, #9b8cf5, transparent);
+      }
+      body::after {
+        width: 300px;
+        height: 300px;
+        bottom: 10%;
+        right: 10%;
+        background: radial-gradient(circle, #89aaf3, transparent);
+      }
+    </style>
+  </head>
+  <body class="relative bg-gradient-to-b from-[#1b103c] to-[#132041] text-white overflow-x-hidden">
+    <div class="flex flex-col min-h-screen relative z-10">
+      <!-- Header -->
+      <header class="p-5">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center">
+          <span class="text-2xl font-bold">AI-SOLUTION</span>
+          <ul class="hidden md:flex gap-8">
+            <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+            <li><a href="event.html" class="hover:text-blue-400">Events</a></li>
+            <li>
+              <a href="contact.html" class="hover:text-blue-400">Contact-Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-20 px-6"
+      >
+        <div class="max-w-xl">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            Discover Modern AI Solutions
+          </h1>
+          <p class="text-gray-300 mb-8">
+            The most secure and trendy place to solve your company's
+            technological issues with AI solutions.
+          </p>
+          <div class="flex gap-4">
+            <button
+              class="bg-[#9b8cf5] text-black font-semibold px-6 py-3 rounded-full"
+            >
+              Contact Now
+            </button>
+            <button
+              class="border border-[#9b8cf5] text-white px-6 py-3 rounded-full hover:bg-[#9b8cf5] hover:text-black"
+            >
+              Events For U
+            </button>
+          </div>
+        </div>
+        <div class="mt-10 md:mt-0">
+          <img
+            src="/images/Other 07.png"
+            alt="AI Illustration"
+            class="w-[400px]"
+          />
+        </div>
+      </section>
+
+      <!-- Our Customers -->
+      <section class="bg-[#20184b] py-14">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="uppercase text-gray-400 text-sm mb-8 tracking-wider">Our Customers</h2>
+          <div class="flex justify-center items-center gap-14 flex-wrap">
+            <img src="/images/tech.png" alt="TechCrunch" class="h-8" />
+            <img src="/images/fastcom.png" alt="FastCompany" class="h-8" />
+            <img src="/images/pgt.png" alt="MIT" class="h-8" />
+            <img src="/images/forbes.png" alt="Forbes" class="h-8" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Offered Solutions -->
+      <section class="max-w-7xl mx-auto py-20 px-6">
+        <h2 class="text-3xl font-bold text-center mb-20">Offered Modern AI Solutions</h2>
+        <div class="grid lg:grid-cols-3 gap-16">
+          <div>
+            <img
+              src="/images/Other 12.png"
+              alt="Prototyping"
+              class="h-48 mx-auto mb-6"
+            />
+            <h3 class="text-xl font-semibold mb-4">
+              Prototyping & Automation Services
+            </h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>
+                AI-based software prototyping tools to help create MVPs rapidly.
+              </li>
+              <li>
+                Automation of repetitive business processes (document handling,
+                data entry).
+              </li>
+              <li>
+                Auto-generating wireframes or UI designs using natural language
+                prompts.
+              </li>
+            </ul>
+            <button
+              class="mt-6 bg-[#9b8cf5] text-black font-semibold px-6 py-2 rounded-full"
+            >
+              Contact Now
+            </button>
+          </div>
+
+          <div>
+            <img
+              src="/images/Other 17.png"
+              alt="Virtual Assistant"
+              class="h-48 mx-auto mb-6"
+            />
+            <h3 class="text-xl font-semibold mb-4">
+              AI-Powered Virtual Assistant Services
+            </h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>
+                Custom-built chatbots for employee support (e.g., IT helpdesk).
+              </li>
+              <li>24/7 bots for FAQs, onboarding, system navigation.</li>
+              <li>
+                Voice-enabled assistants for hands-free access to internal
+                tools.
+              </li>
+            </ul>
+            <button
+              class="mt-6 bg-[#9b8cf5] text-black font-semibold px-6 py-2 rounded-full"
+            >
+              Contact Now
+            </button>
+          </div>
+
+          <div>
+            <img
+              src="/images/Other 18.png"
+              alt="Predictive Issues"
+              class="h-48 mx-auto mb-6"
+            />
+            <h3 class="text-xl font-semibold mb-4">
+              Predictive Issue Detection Tools
+            </h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>
+                AI systems that monitor applications or systems for failures or
+                lags.
+              </li>
+              <li>
+                Proactive alerts for experience disruptions (slowdowns,
+                outages).
+              </li>
+            </ul>
+            <button
+              class="mt-6 bg-[#9b8cf5] text-black font-semibold px-6 py-2 rounded-full"
+            >
+              Contact Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+       <!-- Testimonials -->
+       <section class="bg-[#20184b] py-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="uppercase text-gray-400 text-sm mb-2">Testimonials</h2>
+          <h3 class="text-3xl font-bold mb-16">Read What Others Have To Say</h3>
+          <div class="flex flex-wrap justify-center gap-8">
+            <div class="bg-[#2b2359] p-6 rounded-lg w-72">
+              <img src="/images/oli.png" alt="Olivia" class="rounded-full mx-auto h-16 w-16 mb-4" />
+              <h4 class="font-semibold mb-2">Olivia Cole</h4>
+              <div class="flex justify-center text-yellow-400 mb-2">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <p class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="bg-[#2b2359] p-6 rounded-lg w-72">
+              <img src="/images/evan.png" alt="Evan" class="rounded-full mx-auto h-16 w-16 mb-4" />
+              <h4 class="font-semibold mb-2">Evan White</h4>
+              <div class="flex justify-center text-yellow-400 mb-2">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <p class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="bg-[#2b2359] p-6 rounded-lg w-72">
+              <img src="/images/jess.png" alt="Jessica" class="rounded-full mx-auto h-16 w-16 mb-4" />
+              <h4 class="font-semibold mb-2">Jessica Page</h4>
+              <div class="flex justify-center text-yellow-400 mb-2">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <p class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-20">
+        <div
+          class="bg-gradient-to-r from-[#89aaf3] to-[#bed9ed] rounded-3xl text-center mx-6 md:mx-20 p-12 w-[1000px] h-[400px]"
+        >
+          <h2 class="font-bold uppercase text-black text-xl mb-8 mt-8">Are you ready?</h2>
+          
+          <h3 class="text-5xl font-bold text-white">
+            Be A Part Of The
+          </h3>
+          <h3 class="text-5xl font-bold text-white mb-10">
+            Next Big Thing
+          </h3>
+        
+          <button class="bg-black text-white px-8 py-3 rounded-full">
+            Get Started
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="border-t border-gray-700 mt-20 py-10 px-6 text-sm text-gray-400"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 max-w-6xl mx-auto">
+          <div>
+            <h4 class="text-white font-bold mb-2">AI-SOLUTION</h4>
+          </div>
+          <div>
+            <h5 class="text-white mb-2">AI-Solution</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-white mb-2">Market</h5>
+            <ul>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Projects</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-white mb-2">Contact</h5>
+            <ul>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-white mb-2">Join our newsletter!</h5>
+            <div class="flex gap-2">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="bg-[#1C1A4C] text-white p-2 rounded-full w-full outline-none"
+              />
+              <button class="bg-[#B2A7F6] px-4 py-2 rounded-full text-white">
+                SUBMIT
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- JavaScript -->
+      <script>
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Form submitted!");
+            // Optionally, you can send form data using fetch() here
+          });
+      </script>
+    </div>
+  </body>
+</html>

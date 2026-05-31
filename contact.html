@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - AI Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#0C0B33] text-white font-sans">
+    <!-- Header -->
+    <header class="p-5">
+      <nav class="max-w-7xl mx-auto flex justify-between items-center">
+        <span class="text-2xl font-bold">AI-SOLUTION</span>
+        <ul class="hidden md:flex gap-8">
+          <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+          <li><a href="event.html" class="hover:text-blue-400">Events</a></li>
+          <li>
+            <a href="contact.html" class="hover:text-blue-400">Contact-Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contact Us Form -->
+    <main class="max-w-4xl mx-auto px-4 py-10">
+      <h2 class="text-4xl font-bold text-center mb-10">Contact Us</h2>
+      <form id="contactForm" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <input
+            type="text"
+            placeholder="First Name:"
+            class="bg-[#1C1A4C] p-4 rounded-full w-full outline-none text-white"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Last Name:"
+            class="bg-[#1C1A4C] p-4 rounded-full w-full outline-none text-white"
+            required
+          />
+        </div>
+        <input
+          type="email"
+          placeholder="Email:"
+          class="bg-[#1C1A4C] p-4 rounded-full w-full outline-none text-white"
+          required
+        />
+        <input
+          type="tel"
+          placeholder="Phone Number:"
+          class="bg-[#1C1A4C] p-4 rounded-full w-full outline-none text-white"
+        />
+        <input
+          type="text"
+          placeholder="Company Name:"
+          class="bg-[#1C1A4C] p-4 rounded-full w-full outline-none text-white"
+        />
+        <input
+          type="text"
+          placeholder="Country:"
+          class="bg-[#1C1A4C] p-4 rounded-full w-full outline-none text-white"
+        />
+        <input
+          type="text"
+          placeholder="Job Title:"
+          class="bg-[#1C1A4C] p-4 rounded-full w-full outline-none text-white"
+        />
+        <textarea
+          placeholder="Job Details:"
+          rows="5"
+          class="bg-[#1C1A4C] p-4 rounded-2xl w-full outline-none text-white resize-none"
+        ></textarea>
+        <div class="flex gap-4">
+          <button
+            type="submit"
+            class="bg-[#B2A7F6] text-white px-6 py-2 rounded-full"
+          >
+            SUBMIT NOW
+          </button>
+          <button
+            type="reset"
+            class="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-[#0C0B33]"
+          >
+            CANCEL ALL
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="border-t border-gray-700 mt-20 py-10 px-6 text-sm text-gray-400"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6 max-w-6xl mx-auto">
+        <div>
+          <h4 class="text-white font-bold mb-2">AI-SOLUTION</h4>
+        </div>
+        <div>
+          <h5 class="text-white mb-2">AI-Solution</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white mb-2">Market</h5>
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white mb-2">Contact</h5>
+          <ul>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white mb-2">Join our newsletter!</h5>
+          <div class="flex gap-2">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="bg-[#1C1A4C] text-white p-2 rounded-full w-full outline-none"
+            />
+            <button class="bg-[#B2A7F6] px-4 py-2 rounded-full text-white">
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Form submitted!");
+          // Optionally, you can send form data using fetch() here
+        });
+    </script>
+  </body>
+</html>
